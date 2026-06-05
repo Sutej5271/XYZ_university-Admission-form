@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ University Admission Form</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <center>
+            <img src="https://static.wixstatic.com/media/2249f9_cabf1b0c61f94e5ba965b5f55e98383c~mv2.png/v1/fit/w_2500,h_1330,al_c/2249f9_cabf1b0c61f94e5ba965b5f55e98383c~mv2.png" alt="University Logo" width="150px">
+            <h1>XYZ UNIVERSITY</h1>
+            <h2>Admission Application Form 2026-27</h2>
+            <p>
+                XYZ University, Hyderabad, Telangana<br>
+                Contact: +91 9876543210<br>
+                Email: admissions@xyzuniversity.edu
+            </p>
+        </center>
+        <hr>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <h2>1. Personal Information</h2>
+
+                <label for="fullname">Full Name *</label><br>
+                <input type="text" id="fullname" required><br><br>
+
+                <label for="fathername">Father's Name *</label><br>
+                <input type="text" id="fathername" required><br><br>
+
+                <label for="mothername">Mother's Name *</label><br>
+                <input type="text" id="mothername" required><br><br>
+
+                <label for="dob">Date of Birth *</label><br>
+                <input type="date" id="dob" required><br><br>
+
+                <label>Gender *</label><br>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>2. Contact Information</h2>
+
+                <label for="mobile">Mobile Number *</label><br>
+                <input type="tel" id="mobile"
+                       pattern="[0-9]{10}"
+                       maxlength="10"
+                       required><br><br>
+
+                <label for="altmobile">Alternate Mobile Number</label><br>
+                <input type="tel" id="altmobile"
+                       pattern="[0-9]{10}"
+                       maxlength="10"><br><br>
+
+                <label for="email">Email Address *</label><br>
+                <input type="email" id="email" required><br><br>
+
+                <label for="aadhaar">Aadhaar Number *</label><br>
+                <input type="text" id="aadhaar"
+                       pattern="[0-9]{12}"
+                       maxlength="12"
+                       required><br><br>
+
+                <label for="nationality">Nationality</label><br>
+                <input type="text" id="nationality" value="Indian">
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>3. Address Details</h2>
+
+                <h3>Current Address</h3>
+
+                <label>House Number</label><br>
+                <input type="text"><br><br>
+
+                <label>Street</label><br>
+                <input type="text"><br><br>
+
+                <label>City</label><br>
+                <input type="text"><br><br>
+
+                <label>State</label><br>
+                <input type="text"><br><br>
+
+                <label>Pincode</label><br>
+                <input type="text"><br><br>
+
+                <input type="checkbox" id="sameaddress">
+                <label for="sameaddress">
+                    Permanent Address Same as Current Address
+                </label>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>4. Academic Details</h2>
+
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board / University</th>
+                        <th>Percentage / CGPA</th>
+                        <th>Year of Passing</th>
+                    </tr>
+
+                    <tr>
+                        <td>SSC</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Intermediate</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Diploma (Optional)</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>5. Course Selection</h2>
+
+                <label for="course">Select Course</label><br>
+                <select id="course">
+                    <option>B.Tech</option>
+                    <option>BBA</option>
+                    <option>BCA</option>
+                    <option>MBA</option>
+                    <option>MCA</option>
+                    <option>M.Tech</option>
+                </select>
+
+                <br><br>
+
+                <label for="branch">Preferred Branch</label><br>
+                <select id="branch">
+                    <option>CSE</option>
+                    <option>AI & ML</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>MECH</option>
+                    <option>CIVIL</option>
+                </select>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>6. Upload Documents</h2>
+
+                <label>Passport Size Photo *</label><br>
+                <input type="file" required><br><br>
+
+                <label>SSC Memo *</label><br>
+                <input type="file" required><br><br>
+
+                <label>Intermediate Memo *</label><br>
+                <input type="file" required><br><br>
+
+                <label>Transfer Certificate *</label><br>
+                <input type="file" required><br><br>
+
+                <label>Aadhaar Card *</label><br>
+                <input type="file" required>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>7. Hostel Requirement</h2>
+
+                <label>Do you require Hostel?</label><br>
+
+                <input type="radio" name="hostel"> Yes
+                <input type="radio" name="hostel"> No
+
+                <br><br>
+
+                <label>Hostel Type</label><br>
+
+                <input type="radio" name="hosteltype"> Boys Hostel
+                <input type="radio" name="hosteltype"> Girls Hostel
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>8. Sports & Extracurricular Activities</h2>
+
+                <input type="checkbox"> Cricket <br>
+                <input type="checkbox"> Football <br>
+                <input type="checkbox"> Volleyball <br>
+                <input type="checkbox"> Coding <br>
+                <input type="checkbox"> Dance <br>
+                <input type="checkbox"> Music <br>
+                <input type="checkbox"> NSS <br>
+                <input type="checkbox"> NCC
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>9. Declaration</h2>
+
+                <p>
+                    I hereby declare that the information
+                    provided by me is true and correct to
+                    the best of my knowledge.
+                </p>
+
+                <input type="checkbox" required>
+                I Agree
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>10. Additional Information</h2>
+
+                <label>Admission Number</label><br>
+                <input type="text" value="XYZ2610XXXX">
+
+                <br><br>
+
+                <label>Application Date</label><br>
+                <input type="date">
+
+                <br><br>
+
+                
+
+            <hr>
+
+            <section>
+                <h2>11. Submit Application</h2>
+
+                <input type="submit" value="Submit Application">
+                <input type="reset" value="Reset Form">
+            </section>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <hr>
+        <center>
+            <p>© 2026 XYZ University. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+</body>
+</html>
